@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+	<meta name="apple-mobile-web-app-title" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Labirra PUB</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="stylesheet" href="css/style.css">
+	
+    
+    <script>
+        window.console = window.console || function(t) {};
+    </script>
+
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+
+
+</head>
+
+<body translate="no">
+
+    <div class="header">
+        <div class="social">
+            <a href="https://www.instagram.com/labirrapub.vilnius/" target="_blank"><img src="insta.png"/></a>
+			<a href="https://www.facebook.com/labirrapub" target="_blank"><img src="fb.png"/></a>
+        </div>
+    </div>
+
+    <div class="catalog-app">
+        <div id="viewer">
+            <div id="flipbook" class="ui-flipbook">
+                <div class="meniu page_1" id="page_1"></div>
+                <div class="meniu page_2" id="page_2"></div>
+                <div class="meniu page_3" id="page_3"></div>
+                <div class="meniu page_4" id="page_4"></div>
+                <div class="meniu page_5" id="page_5"></div>
+                <div class="meniu page_6" id="page_6"></div>
+            </div>
+        </div>
+    </div>
+    <!-- scripts js -->
+
+    <script src='js/jquery-2.0.3.min.js'></script>
+    <script src='js/underscore-min.js'></script>
+    <script src='js/backbone-min.js'></script>
+	<script id="rendered-js" src='js/turn.js'></script>
+
+
+</body>
+
+</html>
